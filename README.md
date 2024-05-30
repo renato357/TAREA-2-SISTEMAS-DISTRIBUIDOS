@@ -9,9 +9,9 @@ El proyecto tiene como objetivo principal diseñar e implementar un sistema esca
 ## Estructura del Repositorio
 
 - `src/`: Directorio que contiene el código fuente de los servicios implementados.
-  - `solicitud/`: Código del servicio de solicitud que recibe y publica pedidos en Kafka.
-  - `procesamiento/`: Código del servicio de procesamiento que consume y procesa los pedidos.
-  - `notificación/`: Código del servicio de notificación que informa el estado de los pedidos.
+  - `request_service/`: Código del servicio de solicitud que recibe y publica pedidos en Kafka.
+  - `processing_service/`: Código del servicio de procesamiento que consume y procesa los pedidos.
+  - `notification_service/`: Código del servicio de notificación que informa el estado de los pedidos.
 - `report/`: Directorio que contiene el informe final del proyecto.
 - `tests/`: Directorio que contiene los scripts de prueba y los conjuntos de datos utilizados para las pruebas.
 
