@@ -18,11 +18,11 @@ El proyecto tiene como objetivo principal diseñar e implementar un sistema esca
 
 ## Video
 
-El enlace para ver el vídeo que muestra el funcionamiento del código con explicaciones es: [Video del proyecto](https://drive.google.com/file/d/1ZGgol_dI9wat6oivdzzq3Bci1xQscC4z/view?ts=6625dcd6)
+El enlace para ver el vídeo que muestra el funcionamiento del código con explicaciones es: [Video del proyecto](https://www.leagueofgraphs.com/summoner/las/lMartinCrack-LAS)
 
 ## Informe Final
 
-El informe final del proyecto se encuentra en el directorio `report/`. Incluye un análisis detallado de los resultados obtenidos, comparaciones entre los diferentes escenarios de carga y respuestas a las preguntas planteadas en el enunciado del proyecto.
+El informe final del proyecto se encuentra en el directorio `report/`. Incluye un análisis de los resultados obtenidos, comparaciones entre los diferentes escenarios de carga y respuestas a las preguntas planteadas en el enunciado del proyecto.
 
 ## Contacto
 
