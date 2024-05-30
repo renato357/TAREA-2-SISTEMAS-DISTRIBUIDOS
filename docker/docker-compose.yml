@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper:3.4.6
+    ports:
+      - "2181:2181"
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_SERVERS: server.1=zookeeper:2888:3888
+
+  kafka:
+    image: wurstmeister/kafka:2.12-2.3.0
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  request_service:
+    build:
+      context: ../src/request_service
+    ports:
+      - "5000:5000"
+    depends_on:
+      - kafka
+
+  processing_service:
+    build:
+      context: ../src/processing_service
+    depends_on:
+      - kafka
+
+  notification_service:
+    build:
+      context: ../src/notification_service
+    ports:
+      - "5001:5001"
+    depends_on:
+      - kafka
