@@ -8,6 +8,7 @@ El proyecto tiene como objetivo principal diseñar e implementar un sistema esca
 
 ## Estructura del Repositorio
 
+- `docker/`: Directorio que contiene el código para la inicialización de kafka.
 - `src/`: Directorio que contiene el código fuente de los servicios implementados.
   - `request_service/`: Código del servicio de solicitud que recibe y publica pedidos en Kafka.
   - `processing_service/`: Código del servicio de procesamiento que consume y procesa los pedidos.
