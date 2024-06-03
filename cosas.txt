@@ -1,5 +1,0 @@
-curl -X POST -H "Content-Type: application/json" -d '{"name": "Producto", "price": 10, "email": "jose.berrios1@mail.udp.cl"}' http://localhost:5000/order
-
-curl http://localhost:5001/status/0e9fed9d-2ce1-475c-8167-a82a4daea2c2
-
-docker-compose up --build

@@ -7,4 +7,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["sh", "-c", "sleep 30 && python app.py"]
+RUN mkdir -p /app/logs
+
+CMD ["sh", "-c", "sleep 25 && python app.py"]

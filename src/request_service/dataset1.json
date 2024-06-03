@@ -1,0 +1,5 @@
+[
+    {"name": "Product1", "price": 10.0, "email": "customer1@example.com"},
+    {"name": "Product2", "price": 20.0, "email": "customer2@example.com"},
+    {"name": "Product3", "price": 30.0, "email": "customer3@example.com"}
+]

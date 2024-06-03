@@ -1,0 +1,19 @@
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Producto", "price": 10, "email": "renato.contreras798@gmail.com"}' http://localhost:5000/order
+
+curl http://localhost:5001/status/<id>
+
+curl -X POST http://localhost:5000/load_dataset_1
+curl -X POST http://localhost:5000/load_dataset_interval_1
+curl -X POST http://localhost:5000/load_dataset_2
+curl -X POST http://localhost:5000/load_dataset_interval_2
+
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+
+docker cp docker-notification_service-1:/app/logs/notification_service.log ./notification_service.log
+docker cp docker-processing_service-1:/app/logs/processing_service.log ./processing_service.log
+docker cp docker-request_service-1:/app/logs/request_service.log ./request_service.log
+
+docker exec -it docker-kafka-1 kafka-topics.sh --describe --zookeeper zookeeper:2181 --topic order_requests
+docker exec -it docker-kafka-1 kafka-topics.sh --describe --zookeeper zookeeper:2181 --topic order_processing
+docker exec -it docker-kafka-1 kafka-topics.sh --describe --zookeeper zookeeper:2181 --topic order_notifications
