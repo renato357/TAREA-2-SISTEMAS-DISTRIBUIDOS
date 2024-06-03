@@ -18,7 +18,7 @@ El proyecto tiene como objetivo principal diseñar e implementar un sistema esca
 
 ## Video
 
-El enlace para ver el vídeo que muestra el funcionamiento del código con explicaciones es: [Video del proyecto](https://drive.google.com/file/d/1hLzlxmFQLcLQb7HUq3vLYEo9197Tr8hg/view?usp=sharing)
+El enlace para ver el vídeo que muestra el funcionamiento del código con explicaciones es (Ingresar con correo institucional): [Video del proyecto](https://drive.google.com/file/d/1hLzlxmFQLcLQb7HUq3vLYEo9197Tr8hg/view?usp=sharing)
 
 ## Informe Final
 
